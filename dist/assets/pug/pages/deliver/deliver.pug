@@ -1,0 +1,20 @@
+head
+  include ../../common/templates/_nameTitle.pug
+  -nameTitle = 'food exxe-Меню'
+  include ../../common/templates/_head.pug
+  title #{nameTitle}
+
+body
+  main
+  include ../../common/components/header/sidebar.pug
+  include ../../common/components/filter-menu/filter-menu.pug
+
+  .foods-menu
+    .container
+        
+      include ../../common/components/food-card/food-card.pug
+      
+  .container  
+    include ../../common/components/contacts/contacts.pug
+  script(src='../../../scripts/ReserveTableOpen.js')
+  include ../../common/components/footer/footer.pug

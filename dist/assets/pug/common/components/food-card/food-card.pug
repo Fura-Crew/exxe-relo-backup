@@ -1,0 +1,20 @@
+- price = ["250 ₽","250 ₽","490 ₽","190 ₽","450 ₽","290 ₽","850 ₽","650 ₽","490 ₽","890 ₽", "960 ₽"]
+- nameFood = ["Яичница-глазунья из трех яиц", "Омлет из трёх яиц", "Домашние сырники", "Блины" , "Каша c ягодами и кедровыми орехами", "Скрэмбл", "Яйцо Бенедикт с лососем", "Яйцо Бенедикт с беконом", "Гречневая каша с авокадо, яйцом пашот и пармезаном", "Кобб – салат с лососем", "Кобб – салат с креветками"]
+
+
+.container-foods-menu
+  each val,food in price
+    .container-foods-menu__card
+      .container-foods-menu__card__image
+        a(href="../food/food.html") 
+          img(src=`../../../image/Rectangle 57-${food}.png`, alt="фото блюда")
+
+      .container-foods-menu__card__text
+        .container-foods-menu__card__text__description
+          | #{nameFood[food]}
+
+        .container-foods-menu__card__text__sell
+          .container-foods-menu__card__text__sell__price
+           | #{price[food]}
+          .container-foods-menu__card__text__sell__bue
+            a(href="#" class='link-background') в корзину

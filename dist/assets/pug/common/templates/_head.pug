@@ -1,0 +1,22 @@
+//-в  этом файле храниться переменная для названия title
+include _nameTitle.pug 
+
+meta(charset="UTF-8")
+meta(name="viewport", content="width=1300px")
+link(rel="icon" href="data:;base64,=")
+//- Подключение основных стилей страниц
+if nameTitle == 'food exxe'
+  link(rel="stylesheet", href="assets/style/normalize.css")
+  link(rel="stylesheet", href="assets/pug/pages/index/index.css")
+  link(rel="stylesheet", href="assets/style/main.css")
+  
+
+if nameTitle == 'food exxe-Меню'
+  link(rel="stylesheet", href="deliver.css")
+  link(rel="stylesheet", href="../../../style/normalize.css")
+  link(rel="stylesheet", href="../../../style/main.css")
+if nameTitle == 'food exxe-Блюдо'
+  link(rel="stylesheet", href="food.css")
+  link(rel="stylesheet", href="../../../style/normalize.css")
+  link(rel="stylesheet", href="../../../style/main.css")
+    

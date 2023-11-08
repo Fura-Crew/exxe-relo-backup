@@ -1,0 +1,32 @@
+include ../../../common/templates/_nameTitle.pug
+aside.sidebar.sidebar-position.sidebar_deliver
+  nav.sidebar-nav
+    ul.sidebar-nav__list
+      .sidebar-nav__list__item_logo
+        li.sidebar-nav__list__item
+          a(href='/')
+            if nameTitle == 'food exxe'
+              img(src="assets/image/logo.svg", alt="Наш логотип")
+            if nameTitle != 'food exxe'
+              img(src="../../../image/logo.svg", alt="Наш логотип")
+            
+      .sidebar-nav__list__item_social-icon
+        li.sidebar-nav__list__item
+          a(href="#")
+            if nameTitle != 'food exxe'
+              img(src="../../../image/soc-icons-1.svg", alt="Иконка социальной сети")
+            if nameTitle == 'food exxe'
+              img(src="assets/image/soc-icons-1.svg", alt="Иконка социальной сети")
+            
+        li.sidebar-nav__list__item 
+          a(href="#") 
+            if nameTitle == 'food exxe'
+              img(src="assets/image/soc-icons-2.svg", alt="Иконка социальной сети")
+            if nameTitle != 'food exxe'
+              img(src="../../../image/soc-icons-2.svg", alt="Иконка социальной сети")
+        li.sidebar-nav__list__item
+          a(href="#")
+            if nameTitle == 'food exxe'
+                img(src="assets/image/soc-icons.svg", alt="Иконка социальной сети")
+            if nameTitle != 'food exxe'
+              img(src="../../../image/soc-icons.svg", alt="Иконка социальной сети")

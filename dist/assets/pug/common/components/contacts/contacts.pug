@@ -1,0 +1,73 @@
+include ../../../common/templates/_nameTitle.pug
+section.contacts
+  h3.section-description
+    |Контакты 
+    span.section-description__elem 
+
+  .contacts__inner
+    .contacts-time-deliver
+      ul.contacts-time-deliver__list
+        li.contacts-time-deliver__list__item
+          .contacts-time-deliver__list__item__time
+            span.card-time.card-time_number 2
+            span.card-time.card-time_min  мин
+          .contacts-time-deliver__list__item__geolocation
+            |из центра Санкт-Петербурга
+        li.contacts-time-deliver__list__item
+          .contacts-time-deliver__list__item__time
+            span.card-time.card-time_number 2
+            span.card-time.card-time_min  мин
+          .contacts-time-deliver__list__item__geolocation
+            |из города Зеленогорск
+
+        li.contacts-time-deliver__list__item
+          .contacts-time-deliver__list__item__time
+            span.card-time.card-time_number 2
+            span.card-time.card-time_min  мин
+          .contacts-time-deliver__list__item__geolocation
+            |из аэропорта Пулково
+
+        li.contacts-time-deliver__list__item
+          .contacts-time-deliver__list__item__time
+            span.card-time.card-time_number 2
+            span.card-time.card-time_min  мин
+          .contacts-time-deliver__list__item__geolocation
+            |из города Павловск
+    .contacts-block
+      .contacts-block__map
+        if nameTitle == 'food exxe'
+          img(src="assets/image/map.jpg", alt="Карта")
+        if nameTitle != 'food exxe'
+          img(src="../../../image/map.jpg", alt="Карта")
+        .contacts-block__contacts
+          .contacts-block__contacts__inner
+            ul.contacts-block__contacts__inner-list
+              li.contacts-block__contacts__inner-list__item
+                span.icon-geo
+                  if nameTitle == 'food exxe'
+                    img(src="assets/image/ci_location.svg", alt="локация" class="phone")
+                  if nameTitle != 'food exxe'
+                    img(src="../../../image/ci_location.svg", alt="локация" class="phone")
+                a(href="#") Санкт-Петербург,Северная дорога, 11  
+              li.contacts-block__contacts__inner-list__item
+                span.icon-phone
+                  if nameTitle == 'food exxe'
+                    img(src="assets/image/ci_phone.svg", alt="телефон" class="location")
+                  if nameTitle != 'food exxe'
+                    img(src="../../../image/ci_phone.svg", alt="телефон" class="location")
+                a(href="tel:+7921777-77-77") +7 (921) 777-77-77
+              .data-time
+                li.contacts-block__contacts__inner-list__item
+                  p время работыa
+                li.contacts-block__contacts__inner-list__item_time
+                  span.time вскр-чт: 
+                  |c 12:00 до 23:00
+                li.contacts-block__contacts__inner-list__item_time
+                  span.time Пт-Сб:
+                  |c 12:00 до 03:00
+                li.contacts-block__contacts__inner-list__item
+                  .deliver-cards
+                    .deliver-cards-block
+                      a(href="#" class='link-background') Бронь столика 
+                    .deliver-cards-block
+                      a(href="#" class='link-non-background link-non-background_contacts') Задать вопрос

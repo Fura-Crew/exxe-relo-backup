@@ -1,0 +1,25 @@
+
+include ../../../common/templates/_nameTitle.pug
+
+.reserve-table-window
+  .reserve-table-window__inner
+    h3.reserve-table-window__inner__heading
+      if nameTitle != 'food exxe'
+        div.logo
+          img(src="../../../image/logo.svg", alt="логотип")
+      if nameTitle == 'food exxe'
+        div.logo
+          img(src="assets/image/logo.svg", alt="логотип")
+      p забронировать столик
+    .close-window
+      if nameTitle != 'food exxe'
+        img(src="../../../image/eva_close-fill.svg", alt="Закрыть окно" class='close-window_icon')
+      if nameTitle == 'food exxe'
+        img(src="assets/image/eva_close-fill.svg", alt="Закрыть окно" class='close-window_icon')
+    .reserve-table-window__inner-form
+      form.window-block-register(action='')
+        input(type='text', placeholder='имя', сlass='form-input form-input_name-input')
+        input(type='text', placeholder='телефон', сlass='form-input form-input_number-input')
+        input(type='text', placeholder='Сколько человек', сlass='form-input form-input_members-input')
+        input(type='text', placeholder='время', сlass='form-input form_time-input')
+        input(type='button', value='Забронировать' class='link-background')

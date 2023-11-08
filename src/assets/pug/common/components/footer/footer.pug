@@ -1,0 +1,17 @@
+include ../../../common/templates/_nameTitle.pug
+footer
+  .container.container_footer
+    ul.footer-list
+      li.footer-list__item
+        if nameTitle == 'food exxe'
+          a(href="#") 
+            img(src="assets/image/logo.svg", alt="Наш логотип")
+        if nameTitle != 'food exxe'
+          a(href="/") 
+            img(src="../../../image/logo.svg", alt="Наш логотип")
+      li.footer-list__item 
+       | Политика конфиденциальности
+      li.footer-list__item 
+       | Дизайн d-e-n.ru
+      li.footer-list__item 
+       | Верстка Black Milk
